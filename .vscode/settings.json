@@ -1,3 +1,10 @@
 {
-    "cmake.sourceDirectory": "C:/Users/ashok/llvm-mingw-20260311-msvcrt-x86_64/llvm-mingw-20260311-msvcrt-x86_64/x86_64-w64-mingw32/share/mingw32"
+    "cmake.sourceDirectory": "C:/Users/ashok/MyAID",
+    "cmake.buildDirectory": "${workspaceFolder}/build",
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "ms-vscode.cpptools",
+    "C_Cpp.formatting": "clangFormat",
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: LLVM, ColumnLimit: 80 }",
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "clangd.arguments": ["--header-insertion=iwyu"]
 }

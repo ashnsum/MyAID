@@ -21,6 +21,40 @@
 			"command": "install",
 			"problemMatcher": [],
 			"detail": "CMake template install task"
+		},
+		{
+			"type": "shell",
+			"label": "Build myapp",
+			"command": "cmake",
+			"args": ["--build", "build"],
+			"group": "build",
+			"presentation": {
+				"echo": true,
+				"reveal": "silent",
+				"focus": false,
+				"panel": "shared"
+			},
+			"options": {
+				"env": {
+					"PATH": "${env:PATH};C:/Users/ashok/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin"
+				}
+			}
+		},
+		{
+			"type": "shell",
+			"label": "Run myapp",
+			"command": "${workspaceFolder}/build/myapp.exe",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"dependsOn": ["Build myapp"],
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": false,
+				"panel": "shared"
+			}
 		}
 	]
 }

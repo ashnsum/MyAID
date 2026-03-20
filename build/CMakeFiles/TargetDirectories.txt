@@ -1,0 +1,3 @@
+C:/Users/ashok/MyAID/build/CMakeFiles/myapp.dir
+C:/Users/ashok/MyAID/build/CMakeFiles/edit_cache.dir
+C:/Users/ashok/MyAID/build/CMakeFiles/rebuild_cache.dir
